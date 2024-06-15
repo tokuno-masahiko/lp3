@@ -14,8 +14,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <meta name="description" content="通い放題、追加料金なし、安心サポートのKBL全身脱毛が今だけ初月0円">
 
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link href="/assets/style/main.css" rel="stylesheet" type="text/css" media="all">
+
+    <meta name="description" content="通い放題、追加料金なし、安心サポートのKBL全身脱毛が今だけ初月0円">
     <meta property="og:title" content="全身脱毛今だけ初月0円：KIRAMEKI BEAUTY LABO">
     <meta property="og:description" content="通い放題、追加料金なし、安心サポートのKBL全身脱毛が今だけ初月0円">
     <meta property="og:type" content="article">
@@ -27,217 +30,69 @@
 
     <main>
         <header class="header">
+            <div class="header__container">
+                <a href="/">
+                    <picture class="header__img">
+                        <source media="(min-width: 768px)" srcset="/assets/image/logo_pc.svg">
+                        <img src="/assets/image/logo_sp.svg" alt="">
+                    </picture>
+                </a>
+                <ul>
+                    <li><a class="header__btn-pink" href="/contact/">お問い合わせ</a></li>
+                    <li><a class="header__btn-green" href="/reservation/">カウンセリング予約<span>(無料)</span></a></li>
+                </ul>
+            </div>
         </header>
 
-        <div class="shop">
-            <div class="shop__contain">
-                <div class="shop__title">キラメキクリーム</div>
-                <div class="shop__cost">税込 4,000円</div>
+        <div class="top">
+            <div class="top__container">
+                <h1 class="top__logo">
+                    <picture class="top__title">
+                        <source media="(min-width: 768px)" srcset="/assets/image/top_logo_pc.png">
+                        <img src="/assets/image/top_logo_sp.png" alt="全身脱毛">
+                    </picture>
+                    <div class="top__description">(顔・VIO込)</div>
+                </h1>
+                <div class="top__cost__container">
+                    <picture class="top__img">
+                        <source media="(min-width: 768px)" srcset="/assets/image/top_cost_pc.png">
+                        <img src="/assets/image/top_cost_sp.png" alt="今だけ初月0円">
+                    </picture>
+                    <div class="top__monthly__fee">2,480<span>円／月</span>
+                    </div>
+                    <div class="top__three__benefit">
+                        <div class="top__support">通い放題</div>
+                        <div class="top__support">追加料金なし</div>
+                        <div class="top__support">安心サポート</div>
+                    </div>
+                </div>
             </div>
-            <a class="shop__button--blue" href="/">オンラインショップへ</a>
-            <form action="/cart/"><button type="submit" class="shop__button--green">購入する</button></form>
         </div>
 
-        <section class="greenbg">
-            <div class="greenbg__comp">
-                <div class="greenbg__container">
-                    <h2 class="greenbg__title">Keep Your Skin Beautiful.</h2>
-                    <h3 class="greenbg__subtitle">お肌を美しく保つ</h3>
-                    <div class="greenbg__txt">
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                    </div>
+        <div class="present">
+            <div class="present__container">
+                <div class="present__voice">今だけ</div>
+                <div class="present__wrapper">
+                    <div class="present__title">フェイシャルコース</div>
+                    <div class="present__content"><span>3</span>回プレゼント!</div>
                 </div>
+                <div class="present__footer">クレンジング/洗顔/フェイスクリーニング/整肌</div>
             </div>
-        </section>
-
-        <section class="voice">
-            <h2 class="voice__title">Voices</h2>
-            <h3 class="voice__subtitle">お客様の声</h3>
-
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="swiper-card">
-                            <picture class="swiper-img1">
-                                <source media="(min-width: 768px)" srcset="/assets/image/person_a_pc.jpg">
-                                <img src="assets/image/person_a.jpg" alt="">
-                            </picture>
-                            <p>Aさん</p>
-                            <div class="swiper-txt">
-                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-card">
-                            <img class="swiper-img2" src="/assets/image/person_b.jpg" alt="">
-                            <p>Bさん</p>
-                            <div class="swiper-txt">
-                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-card">
-                            <img class="swiper-img3" src="/assets/image/person_c.jpg" alt="">
-                            <p>Cさん</p>
-                            <div class="swiper-txt">
-                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-card">
-                            <img class="swiper-img4" src="/assets/image/person_d.jpg" alt="">
-                            <p>Dさん</p>
-                            <div class="swiper-txt">
-                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-card">
-                            <img class="swiper-img5" src="/assets/image/person_e.jpg" alt="">
-                            <p>Eさん</p>
-                            <div class="swiper-txt">
-                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-card">
-                            <img class="swiper-img6" src="/assets/image/person_f.jpg" alt="">
-                            <p>Fさん</p>
-                            <div class="swiper-txt">
-                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-pagination"></div>
-        </section>
-
-        <section class="question">
-            <div class="question__contents">
-                <h2 class="question__title">Q&A</h2>
-                <h3 class="question__txt">よくあるご質問</h3>
-                <div class="question__container js_container">
-                    <div class="question__container__txt1">
-                        <div class="question__container__txt--q">Q.</div>
-                        <div class="question__container__txt--a">テキストが入ります。テキストが入ります。テキストが入ります。</div>
-                        <picture class="question__container__txt--tag1 js_up">
-                            <source media="(min-width: 768px)" srcset="/assets/image/caret_up_pc.svg">
-                            <img src="assets/image/caret_up_sp.svg" alt="">
-                        </picture>
-                        <picture class="question__container__txt--tag2 js_down">
-                            <source media="(min-width: 768px)" srcset="/assets/image/caret_down_pc.svg">
-                            <img src="assets/image/caret_down_sp.svg" alt="">
-                        </picture>
-                    </div>
-                    <div class="question__container__txt2 js_txt">
-                        <div class="question__container__txt--q">A.</div>
-                        <div class="question__container__txt--b">
-                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        </div>
-                    </div>
-                </div>
-                <div class="question__container js_container">
-                    <div class="question__container__txt1">
-                        <div class="question__container__txt--q">Q.</div>
-                        <div class="question__container__txt--a">テキストが入ります。テキストが入ります。テキストが入ります。</div>
-                        <picture class="question__container__txt--tag1 js_up">
-                            <source media="(min-width: 768px)" srcset="/assets/image/caret_up_pc.svg">
-                            <img src="assets/image/caret_up_sp.svg" alt="">
-                        </picture>
-                        <picture class="question__container__txt--tag2 js_down">
-                            <source media="(min-width: 768px)" srcset="/assets/image/caret_down_pc.svg">
-                            <img src="assets/image/caret_down_sp.svg" alt="">
-                        </picture>
-                    </div>
-                    <div class="question__container__txt2 js_txt">
-                        <div class="question__container__txt--q">A.</div>
-                        <div class="question__container__txt--b">
-                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        </div>
-                    </div>
-                </div>
-                <div class="question__container js_container">
-                    <div class="question__container__txt1">
-                        <div class="question__container__txt--q">Q.</div>
-                        <div class="question__container__txt--a">テキストが入ります。テキストが入ります。テキストが入ります。</div>
-                        <picture class="question__container__txt--tag1 js_up">
-                            <source media="(min-width: 768px)" srcset="/assets/image/caret_up_pc.svg">
-                            <img src="assets/image/caret_up_sp.svg" alt="">
-                        </picture>
-                        <picture class="question__container__txt--tag2 js_down">
-                            <source media="(min-width: 768px)" srcset="/assets/image/caret_down_pc.svg">
-                            <img src="assets/image/caret_down_sp.svg" alt="">
-                        </picture>
-                    </div>
-                    <div class="question__container__txt2 js_txt">
-                        <div class="question__container__txt--q">A.</div>
-                        <div class="question__container__txt--b">
-                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        </div>
-                    </div>
-                </div>
-                <div class="question__container js_container">
-                    <div class="question__container__txt1">
-                        <div class="question__container__txt--q">Q.</div>
-                        <div class="question__container__txt--a">テキストが入ります。テキストが入ります。テキストが入ります。</div>
-                        <picture class="question__container__txt--tag1 js_up">
-                            <source media="(min-width: 768px)" srcset="/assets/image/caret_up_pc.svg">
-                            <img src="assets/image/caret_up_sp.svg" alt="">
-                        </picture>
-                        <picture class="question__container__txt--tag2 js_down">
-                            <source media="(min-width: 768px)" srcset="/assets/image/caret_down_pc.svg">
-                            <img src="assets/image/caret_down_sp.svg" alt="">
-                        </picture>
-                    </div>
-                    <div class="question__container__txt2 js_txt">
-                        <div class="question__container__txt--q">A.</div>
-                        <div class="question__container__txt--b">
-                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        </div>
-                    </div>
-                </div>
-                <div class="question__container js_container">
-                    <div class="question__container__txt1">
-                        <div class="question__container__txt--q">Q.</div>
-                        <div class="question__container__txt--a">テキストが入ります。テキストが入ります。テキストが入ります。</div>
-                        <picture class="question__container__txt--tag1 js_up">
-                            <source media="(min-width: 768px)" srcset="/assets/image/caret_up_pc.svg">
-                            <img src="assets/image/caret_up_sp.svg" alt="">
-                        </picture>
-                        <picture class="question__container__txt--tag2 js_down">
-                            <source media="(min-width: 768px)" srcset="/assets/image/caret_down_pc.svg">
-                            <img src="assets/image/caret_down_sp.svg" alt="">
-                        </picture>
-                    </div>
-                    <div class="question__container__txt2 js_txt">
-                        <div class="question__container__txt--q">A.</div>
-                        <div class="question__container__txt--b">
-                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="shop">
-            <div class="shop__contain">
-                <div class="shop__title">キラメキクリーム</div>
-                <div class="shop__cost">税込 4,000円</div>
-            </div>
-            <a class="shop__button--blue" href="/">オンラインショップへ</a>
-            <form action="/cart/"><button type="submit" class="shop__button--green">購入する</button></form>
         </div>
-        <div class="sticky_icon">
-            <img class="back__to__top" src="/assets/image/back_to_top.svg" alt="トップへ戻る" id="scrollToTopImage">
+
+        <div class="traial">
+            <div class="traial__container">
+                <div class="trial__module">
+                    <div class="trial__module__title">無料体験実施中!</div>
+                    <a class="trial__module__btn" href="/reservation/">カウンセリング予約は<br>こちら (無料)</a>
+                </div>
+                <div class="trial__title">無料体験内容</div>
+                <div class="trial__content-hair">&lt;脱毛体験&gt;&nbsp;&nbsp;V<span>(10分)or</span>両脇<span>(10分)</span></div>
+                <div class="trial__content-faice">&lt;脱毛体験&gt;&nbsp;&nbsp;フェイシャルトリートメント<span>(40分コース1回)</span></div>
+            </div>
+
         </div>
+
 
         <footer>
             <div class="footer">
