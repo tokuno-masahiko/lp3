@@ -457,7 +457,7 @@ li, ol {
 }
 
 .trial {
-  padding: 2rem 0 4rem 0;
+  padding: 2rem 0 3.6rem 0;
   width: 100%;
 }
 @media (min-width:768px) {
@@ -592,7 +592,7 @@ li, ol {
 .point {
   width: 100%;
   background-color: #fdf0f5;
-  padding: 4.1rem 0 3rem;
+  padding: 3.3rem 0 3rem .1rem;
 }
 
 .point__container {
@@ -600,111 +600,221 @@ li, ol {
   margin: 0 auto;
 }
 
-.point__description {
-  width: 29.297rem;
+.point__description img{
+  width: 29.5rem;
   height: 2.6rem;
-  margin: 0 auto 2rem;
+  display: block;
+  padding-left: .3rem;
+  margin: 0 auto .6rem;
 }
 
 .point__title {
   color: #fa7da3;
   font-size: 3.2rem;
   font-weight: 700;
-  text-align: center;
-  margin-bottom: 3.1rem;
+  margin: 0 auto 2.2rem;
+  padding-left: .5rem;
+  width: 29.3rem;
   position: relative;
+  letter-spacing: 0.04em;
+  text-align: center;
 }
 
 .point__title::before {
   content: url(/assets/image/left_star_sp.png);
   position: absolute;
-  top: 0;
+  top: .2rem;
   left: 0;
 }
 
 .point__title::after {
   content: url(/assets/image/right_star_sp.png);
   position: absolute;
-  top: 0;
-  left: 0;
+  top: .2rem;
+  right: 0;
 }
 
-.point__free__wrapper {
+.point__wrapper {
   border: #fa7da3 1px solid;
   box-sizing: content-box;
   border-radius: 1rem;
-  width: 35rem;
+  width: 34.8rem;
   height: 24.2rem;
+  margin: 0 auto;
+}
+
+.point__wrapper:nth-of-type(2) {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .point__subtitle {
   width: 100%;
-  height: 4.6rem;
+  height: 4.4rem;
   font-size: 1.8rem;
   background-color: #fa7da3;
   color: #ffffff;
+  border-radius: 1rem 1rem 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: .1rem;
+}
+
+.point__subtitle span {
+  margin: 0 1.1rem 0 1.1rem;
 }
 
 .point__content {
-  width: 100%;
   background-color: #ffffff;
-  padding: 2rem 0;
+  padding: 1.4rem 2rem 4rem 2rem;
+  border-radius: 0 0 1rem 1rem;
 }
 
-.point__free__txt {
+.point__txt {
   font-size: 1.4rem;
+  letter-spacing: 0.04em;
   font-feature-settings: "palt";
+  margin-bottom: 1.3rem;
 }
 
 .point__free__img__wrapper {
   display: flex;
+  gap: 2.3rem;
 }
 
 .point__free__kbl__content {
   border: #fa7da3 1px solid;
   box-sizing: content-box;
   width: 14.3rem;
-  height: 8.5rem;
+  height: 8.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 
 .point__free__kbl__content::after {
   content: "来店1回で全身1回";
   position: absolute;
-  bottom: -3rem;
-  font-size: 1rem;
-  left: 0;
+  font-size: 1.4rem;
+  bottom: -2.6rem;
+  left: 1.4rem;
 }
 
 .point__free__img img {
   width: 7.1rem;
   height: 3.9rem;
+  padding-top: .2rem;
+  padding-left: .3rem;
 }
 
 .point__free__salon__content {
   border: 1px solid;
   box-sizing: content-box;
   width: 14.3rem;
-  height: 8.5rem;
+  height: 8.3rem;
+  background-color: #FDF0F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 
 .point__free__salon__content::after {
   content: "来店3回で全身1回";
   position: absolute;
-  bottom: -3rem;
-  font-size: 1rem;
-  left: 0;
+  font-size: 1.4rem;
+  bottom: -2.6rem;
+  left: 1.4rem;
 }
 
 .point__free__salon__logo {
   font-size: 1.8rem;
   letter-spacing: 0.12em;
-  /* font-feature-settings: "palt";オプティカル？ */
+  padding-bottom: .3rem;
+  padding-left: .3rem;
 }
+
+.point__plan__subject {
+  font-size: 2.3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.point__plan__part__container {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.point__plan__part__img__1st, .point__plan__part__img__2nd, .point__plan__part__img__3rd,
+.point__plan__part__img__4th, .point__plan__part__img__5th, .point__plan__part__img__6th {
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+}
+
+.point__plan__part__img__1st {
+  background-image: url(/assets/image/part01_sp.png);
+}
+
+.point__plan__part__img__1st::after {
+  content: "うなじ";
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+}
+.point__plan__part__img__2nd {
+  background-image: url(/assets/image/part02_sp.png);
+}
+
+.point__plan__part__img__2nd::after {
+  content: "ワキ";
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+}
+.point__plan__part__img__3rd {
+  background-image: url(/assets/image/part03_sp.png);
+}
+
+.point__plan__part__img__3rd::after {
+  content: "Oライン";
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+}
+.point__plan__part__img__4th {
+  background-image: url(/assets/image/part04_sp.png);
+}
+
+.point__plan__part__img__4th::after {
+  content: "おでこ";
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+}
+.point__plan__part__img__5th {
+  background-image: url(/assets/image/part05_sp.png);
+}
+
+.point__plan__part__img__5th::after {
+  content: "あご";
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+}
+.point__plan__part__img__6th {
+  background-image: url(/assets/image/part06_sp.png);
+}
+
+.point__plan__part__img__6th::after {
+  content: "フェイスライン";
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+}
+
 
 
 
