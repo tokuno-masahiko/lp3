@@ -9,8 +9,7 @@ const swiper = new Swiper(".swiper", {
     breakpoints: {
         768: {
             slidesPerView: 3,
-            spaceBetween: 40,
-            slidesPerGroup: 3,
+            spaceBetween: -60
         }
     }
 });
