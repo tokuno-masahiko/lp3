@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>全身脱毛今だけ初月0円：KIRAMEKI BEAUTY LABO</title>
 
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Marcellus&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
@@ -26,8 +21,9 @@
 </head>
 
 <body>
-
+<!-- main -->
     <main>
+        <!-- ヘッダー -->
         <header class="header">
             <div class="header__container">
                 <a href="/">
@@ -43,23 +39,29 @@
             </div>
         </header>
 
+        <!-- トップセクション -->
         <div class="top">
             <div class="top__container">
-                <div class="top__logo">
+                <h1 class="top__logo">
                     <picture class="top__title">
                         <source media="(min-width: 768px)" srcset="/assets/image/top_logo_pc.png">
                         <img src="/assets/image/top_logo_sp.png" alt="全身脱毛">
                     </picture>
-                    <h1 class="top__description">(顔・VIO込)</h1>
-                </div>
+                    <span class="top__description">(顔・VIO込)</span>
+                </h1>
                 <div class="top__cost__container">
-                    <picture class="top__img">
-                        <source media="(min-width: 768px)" srcset="/assets/image/top_cost_pc.png">
-                        <img src="/assets/image/top_cost_sp.png" alt="今だけ初月0円">
-                    </picture>
-                    <div class="top__monthly__fee">2,480<span>円／月</span>
+                    <div class="top__cost__box">
+                        <div class="top__cost__sentense">
+                            <div class="top__cost__current">今だけ</div>
+                            <div class="top__cost__first">初月</div>
+                        </div>
+                        <div class="top__cost__zero">
+                            <div class="top__cost__fee">0<span>円</span></div>
+                        </div>
                     </div>
-                    <div class="top__three__benefit">
+                    <p class="top__monthly__fee">2,480<span>円／月</span>
+                    </p>
+                    <div class="top__three--benefit">
                         <div class="top__support">通い放題</div>
                         <div class="top__support">追加料金なし</div>
                         <div class="top__support">安心サポート</div>
@@ -68,12 +70,13 @@
             </div>
         </div>
 
+        <!-- カウンセリング予約 -->
         <div class="present">
             <div class="present__container">
                 <div class="present__voice">今だけ<span>!</span></div>
                 <div class="present__wrapper">
                     <div class="present__title">フェイシャルコース</div>
-                    <div class="present__content"><span>3</span>回プレゼント&nbsp;&nbsp;!</div>
+                    <p class="present__content"><span>3</span>回プレゼント&nbsp;&nbsp;!</p>
                 </div>
                 <div class="present__footer">クレンジング/洗顔/フェイスヒーリング/&nbsp;整肌</div>
             </div>
@@ -89,20 +92,22 @@
                 <div class="trial__txt">〈脱毛体験〉V<span>(10分)or</span>両脇<span>(10分)</span></div>
                 <div class="trial__txt">〈美顔体験〉フェイシャルトリートメント<span>(40分コース1回)</span></div>
             </div>
-
         </div>
 
+        <!-- ポイントセクション -->
         <section class="point">
             <div class="point__container">
-                <picture class="point__description">
-                    <source media="(min-width: 768px)" srcset="/assets/image/point_desc_pc.svg">
-                    <img src="/assets/image/point_desc_sp.svg" alt="">
-                </picture>
-                <h2 class="point__title">3つのポイント</h2>
+                <h2>
+                    <picture class="point__description">
+                        <source media="(min-width: 768px)" srcset="/assets/image/point_desc_pc.svg">
+                        <img src="/assets/image/point_desc_sp.svg" alt="">
+                    </picture>
+                    <span class="point__title">3つのポイント</span>
+                </h2>
                 <div class="point__wrapper">
                     <div class="point__subtitle">POINT1<span>|</span>通い放題</div>
                     <div class="point__content">
-                        <div class="point__txt">納得いくまで何度でも、追加料金なく安心して通っていただけます。</div>
+                        <p class="point__txt">納得いくまで何度でも、追加料金なく安心して通っていただけます。</p>
                         <div class="point__free__img__wrapper">
                             <div class="point__free__kbl__content">
                                 <picture class="point__free__img">
@@ -119,10 +124,10 @@
                 <div class="point__wrapper">
                     <div class="point__subtitle__2nd">POINT2<span>|</span>プランが選べる</div>
                     <div class="point__plan__content">
-                        <div class="point__plan__txt">「全身プラン」と、施術部位を選べる「部分脱毛プラン」から自由にお選びいただけます。</div>
+                        <p class="point__plan__txt">「全身プラン」と、施術部位を選べる「部分脱毛プラン」から自由にお選びいただけます。</p>
                         <picture class="point__plan__img">
                             <source media="(min-width: 768px)" srcset="/assets/image/body_pc.png">
-                            <img src="/assets/image/body_sp.png" alt="全身の部位名を表示しています">
+                            <img src="/assets/image/body_sp.png" alt="おでこ　頬　フェイスライン　鼻下　あご　ワキ　へそ周り　手指甲　Vライン　Iライン　ヒザ　足指甲　うなじ　背中　ヒップ　Oライン">
                         </picture>
                         <div class="point__plan__subject">部分脱毛プラン</div>
                         <div class="point__plan__flex__parent">
@@ -180,26 +185,30 @@
                 <div class="point__wrapper">
                     <div class="point__subtitle__3rd">POINT3<span>|</span>安心のサポート</div>
                     <div class="point__support__content">
-                        <div class="point__support__txt">提携医療機関のサポートがありますので、ご安心ください。</div>
+                        <p class="point__support__txt">提携医療機関のサポートがありますので、ご安心ください。</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- カウンセリング予約 -->
         <div class="trial__module">
             <div class="trial__module__title">無料体験実施中&nbsp;!</div>
             <a class="trial__module__btn" href="/reservation/">カウンセリング予約<br>&ensp;はこちら&nbsp;&nbsp;(無料)</a>
         </div>
 
+        <!-- コースセクション -->
         <section class="course">
             <div class="course__container">
-                <div class="course__subtitle">ほかにも選べる<span>!</span></div>
-                <h2 class="course__logo">2つのコース</h2>
+                <h2>
+                    <span class="course__subtitle">ほかにも選べる<span>!</span></span>
+                    <span class="course__logo">2つのコース</span>
+                </h2>
                 <div class="course__parent">
                     <div class="course__wrapper">
                         <div class="course__title">ボディコース</div>
                         <div class="course__content">
-                            <div class="course__txt">ボディケアのスペシャリストが、お客様のお肌を優しく施術いたします。</div>
+                            <p class="course__txt">ボディケアのスペシャリストが、お客様のお肌を優しく施術いたします。</p>
                             <picture class="course__img">
                                 <source media="(min-width: 768px)" srcset="/assets/image/course01_pc.jpg">
                                 <img src="/assets/image/corse01_sp.jpg" alt="">
@@ -209,7 +218,7 @@
                     <div class="course__wrapper">
                         <div class="course__title">フェイシャルコース</div>
                         <div class="course__content">
-                            <div class="course__txt">確かな技術を持つエステティシャンが<span> </span>、お客様の理想のお肌に近づけます。</div>
+                            <p class="course__txt">確かな技術を持つエステティシャンが<span> </span>、お客様の理想のお肌に近づけます。</p>
                             <picture class="course__img">
                                 <source media="(min-width: 768px)" srcset="/assets/image/course02_pc.jpg">
                                 <img src="/assets/image/course02_sp.jpg" alt="">
@@ -220,6 +229,7 @@
             </div>
         </section>
 
+        <!-- お客様の声セクション -->
         <section class="voice">
             <div class="voice__container">
                 <h2 class="voice__title">お客様の声</h2>
@@ -234,8 +244,8 @@
                                         <img src="/assets/image/voice01_sp.png" alt="">
                                     </picture>
                                     <div class="swiper__card__txt">
-                                        <div class="swiper__card__name">20代<span>R</span>.Bさま/大学生</div>
-                                        <div class="swiper__card__sentence">ここにコピーが入ります。ここにコピーが入ります。ここにコピーが入ります。ここにコピーが入ります。</div>
+                                        <div class="swiper__card__name">20代<span>R.Bさま/大学生</span></div>
+                                        <p class="swiper__card__sentence">ここにコピーが入ります。ここにコピーが入ります。ここにコピーが入ります。ここにコピーが入ります。</p>
                                     </div>
                                 </div>
                             </div>
@@ -249,8 +259,8 @@
                                         <img src="/assets/image/voice02_sp.png" alt="">
                                     </picture>
                                     <div class="swiper__card__txt">
-                                        <div class="swiper__card__name">30代<span>N</span>.Tさま/会社員</div>
-                                        <div class="swiper__card__sentence">納得いくまで何度も、追加料金なく安心して通うことができて大変満足しています。</div>
+                                        <div class="swiper__card__name">30代<span>N.Tさま/会社員</span></div>
+                                        <p class="swiper__card__sentence">納得いくまで何度も、追加料金なく安心して通うことができて大変満足しています。</p>
                                     </div>
                                 </div>
                             </div>
@@ -264,8 +274,8 @@
                                         <img src="/assets/image/voice03_sp.png" alt="">
                                     </picture>
                                     <div class="swiper__card__txt">
-                                        <div class="swiper__card__name">20代<span>Y</span>.Kさま/会社員</div>
-                                        <div class="swiper__card__sentence">ここにコピーが入ります。ここにコピーが入ります。ここにコピーが入ります。ここにコピーが入ります。</div>
+                                        <div class="swiper__card__name">20代<span>Y.Kさま/会社員</span></div>
+                                        <p class="swiper__card__sentence">ここにコピーが入ります。ここにコピーが入ります。ここにコピーが入ります。ここにコピーが入ります。</p>
                                     </div>
                                 </div>
                             </div>
@@ -281,8 +291,7 @@
             <a class="trial__module__btn" href="/reservation/">カウンセリング予約<br>&ensp;はこちら&nbsp;&nbsp;(無料)</a>
         </div>
 
-
-
+        <!-- フッター -->
         <footer>
             <div class="footer">
                 <div class="footer__container">
