@@ -1,3 +1,4 @@
+// お客様の声 Swiper
 const swiper = new Swiper(".swiper", {
     initialSlide: 1,
     centeredSlides: true,
