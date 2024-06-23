@@ -677,7 +677,7 @@ ol {
     width: 1.203rem;
     height: 1.897rem;
     content: '';
-    background-image: url(/assets/image/arrow_large_sp.png);
+    background-image: url(/assets/image/arrow_large_sp.svg);
     position: absolute;
     background-size: cover;
     top: 3rem;
@@ -689,7 +689,7 @@ ol {
         width: 1.962rem;
         height: 3.085rem;
         content: '';
-        background-image: url(/assets/image/arrow_large_pc.png);
+        background-image: url(/assets/image/arrow_large_pc.svg);
         top: 4.9rem;
         right: 5.2rem;
     }
@@ -1093,13 +1093,12 @@ ol {
 
 .point__plan__content {
     background-color: #fff;
-    padding: 1.5rem 1.2rem 4rem 1.1rem;
+    padding: 1.5rem 1.2rem 0 1.1rem;
     border-radius: 0 0 1rem 1rem;
 }
-
 @media (min-width:768px) {
     .point__plan__content {
-        padding: 1.5rem 1.2rem 5.7rem 1.1rem;
+        padding: 1.5rem 1.2rem 3.1rem 1.1rem;
     }
 }
 
@@ -1109,7 +1108,6 @@ ol {
     width: 30.9rem;
     margin-left: .8rem;
 }
-
 @media (min-width:768px) {
     .point__plan__txt {
         font-size: 2.1rem;
@@ -1143,12 +1141,12 @@ ol {
     margin-top: 4rem;
     margin-bottom: 2.5rem;
 }
-
 @media (min-width:768px) {
     .point__plan__subject {
         font-size: 2.4rem;
         margin-top: 5.4rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 2.7rem;
+        margin-left: .2rem;
     }
 }
 
@@ -1160,178 +1158,13 @@ ol {
     }
 }
 
-.point__plan__part__container {
-    display: flex;
-    gap: 1.2rem;
+.point__plan__part__img img:nth-of-type(1){
+    margin-bottom: 1.6rem;
 }
-
 @media (min-width:768px) {
-    .point__plan__part__container {
-        gap: 1.2rem;
+    .point__plan__part__img img:nth-of-type(1){
+        margin-bottom: 0;
     }
-}
-
-.point__plan__part__container:nth-of-type(2) {
-    margin-top: 4.2rem;
-}
-
-@media (min-width:768px) {
-    .point__plan__part__container:nth-of-type(2) {
-        margin-top: 0;
-    }
-}
-
-.point__plan__part__img__1st,
-.point__plan__part__img__2nd,
-.point__plan__part__img__3rd,
-.point__plan__part__img__4th,
-.point__plan__part__img__5th,
-.point__plan__part__img__6th {
-    position: relative;
-    width: 10rem;
-    height: 10rem;
-}
-
-.point__plan__part__img__1st::after,
-.point__plan__part__img__2nd::after,
-.point__plan__part__img__3rd::after,
-.point__plan__part__img__4th::after,
-.point__plan__part__img__5th::after,
-.point__plan__part__img__6th::after {
-    position: absolute;
-    color: #fa7da3;
-    font-size: 1.4rem;
-    font-weight: 600;
-}
-
-.point__plan__part__img__1st {
-    background-image: url(/assets/image/part01_sp.png);
-    background-size: cover;
-}
-
-.point__plan__part__img__1st img {
-    position: absolute;
-    width: 3rem;
-    height: 1.8rem;
-    top: 6.8rem;
-    left: 3.5rem;
-}
-
-.point__plan__part__img__1st::after {
-    content: "うなじ";
-    bottom: -2.4rem;
-    left: 2.9rem;
-}
-
-.point__plan__part__img__2nd {
-    background-image: url(/assets/image/part02_sp.png);
-    background-size: cover;
-}
-
-.point__plan__part__img__2nd picture:nth-of-type(1) img {
-    position: absolute;
-    width: 1.8rem;
-    height: 1.8rem;
-    top: 3.6rem;
-    left: .6rem;
-}
-
-.point__plan__part__img__2nd picture:nth-of-type(2) img {
-    position: absolute;
-    width: 1.8rem;
-    height: 1.8rem;
-    top: 3.6rem;
-    left: 7.4rem;
-}
-
-.point__plan__part__img__2nd::after {
-    content: "ワキ";
-    bottom: -2.4rem;
-    left: 3.6rem;
-}
-
-.point__plan__part__img__3rd {
-    background-image: url(/assets/image/part03_sp.png);
-    background-size: cover;
-}
-
-.point__plan__part__img__3rd img {
-    position: absolute;
-    width: 2.6rem;
-    height: 2.6rem;
-    top: 5.7rem;
-    left: 3.8rem;
-}
-
-.point__plan__part__img__3rd::after {
-    content: "Oライン";
-    bottom: -2.4rem;
-    left: 2.3rem;
-}
-
-.point__plan__part__img__4th {
-    background-image: url(/assets/image/part04_sp.png);
-    background-size: cover;
-}
-
-.point__plan__part__img__4th img {
-    position: absolute;
-    width: 3rem;
-    height: 1.8rem;
-    top: 3.4rem;
-    left: 3.5rem;
-}
-
-.point__plan__part__img__4th::after {
-    content: "おでこ";
-    bottom: -2.4rem;
-    left: 2.9rem;
-}
-
-.point__plan__part__img__5th {
-    background-image: url(/assets/image/part05_sp.png);
-    background-size: cover;
-}
-
-.point__plan__part__img__5th img {
-    position: absolute;
-    width: 1.6rem;
-    height: .6rem;
-    top: 8.6rem;
-    left: 4.2rem;
-}
-
-.point__plan__part__img__5th::after {
-    content: "あご";
-    bottom: -2.4rem;
-    left: 3.6rem;
-}
-
-.point__plan__part__img__6th {
-    background-image: url(/assets/image/part06_sp.png);
-    background-size: cover;
-}
-
-.point__plan__part__img__6th picture:nth-of-type(1) img {
-    position: absolute;
-    width: 1.05rem;
-    height: 1.545rem;
-    top: 7.1rem;
-    left: 3rem;
-}
-
-.point__plan__part__img__6th picture:nth-of-type(2) img {
-    position: absolute;
-    width: 1.05rem;
-    height: 1.545rem;
-    top: 7.1rem;
-    left: 6.2rem;
-}
-
-.point__plan__part__img__6th::after {
-    content: "フェイスライン";
-    bottom: -2.4rem;
-    left: .1rem;
 }
 
 .point__support__content {
